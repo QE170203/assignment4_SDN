@@ -17,7 +17,7 @@ mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
     .catch(err => console.log(err));
 // Routes
 app.use('/auth', require('./routes/auth'));
-app.use('/users', require('./routes/user'));
+app.use('/users', require('./routes/users'));
 
 // Information Route
 app.get('/info', (req, res) => {
